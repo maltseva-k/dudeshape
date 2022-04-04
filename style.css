@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;1,700&display=swap');
 
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: red;
+}
 header {
     display: flex;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
     justify-content: space-between;
     width: 100%;
+    box-sizing: border-box;
+    padding-right: 4rem;
+    padding-left: 4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -60,7 +70,86 @@ header .icons a img:last-child{
 
 }
 
+.title {
+    background-color: #F9F6F5;
+    width: 100%;
+    align-items: center;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+}
+
+.title_left {
+    min-width: 35%;
+    box-sizing: border-box;
+    padding-left: 4rem;
+
+
+}
+
+
+.title_text {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #555555;
+    margin-bottom: 2rem;
+    padding-right: 20%;
+
+}
+.title_search {
+    width: 40%;
+    margin-right: auto;
+    text-align: center;
+    margin-left: 0;
+}
+
+
+.title_search input{
+    border: none;
+    height: 2rem;
+    width: 100%;
+
+}
+
+.title_button {
+    background-color: #402F2C;
+    padding: 16px 32px;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 2rem;
+
+}
+
+.title_search_img {
+    background-color: #402F2C;
+
+}
+
+.title_button:hover {
+
+    background-color: #402F2C;
+
+    color: #FFFFFF;
+
+
+}
+
+.title_right {
+    width: 75%;
+
+}
+
+.title_right img {
+    width: 100%;
+}
+
 @media (max-width: 767px) {
+    header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     header nav {
         display: none;
     }
@@ -70,27 +159,73 @@ header .icons a img:last-child{
         margin-left: 1rem;
     }
 
+    .title {
+        flex-direction: column;
+        display: flex;
+
+    }
+    .title_right {
+        order: 1;
+        width: 100%;
+    }
+    .title_left {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title_text {
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+
+    .title_search {
+        width: 60%;
+        margin-right: auto;
+        text-align: center;
+        margin-left: auto;
+    }
+    .title_search input {
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     header {
-        box-sizing: border-box;
+       /* box-sizing: border-box;
         padding-left: 2rem;
-        padding-right: 2rem;
+        padding-right: 2rem;*/
     }
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .title_left
 }
 @media (min-width: 991px) and (max-width: 1199px) {
     header {
-        box-sizing: border-box;
+        /*box-sizing: border-box;
         padding-left: 3rem;
-        padding-right: 3rem;
+        padding-right: 3rem;*/
+    }
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 @media (min-width: 1200px) {
     header {
-        box-sizing: border-box;
+        /*box-sizing: border-box;
         padding-left: 5rem;
-        padding-right: 5rem;
+        padding-right: 5rem;*/
+    }
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
