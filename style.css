@@ -306,6 +306,44 @@ header .icons a img:last-child{
 
 }
 
+.advantage {
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #FDF8F5;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    margin-top: 3rem;
+    padding: 2rem 3rem;
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 70px;
+    /* identical to box height, or 125% */
+
+
+    color: #222222;
+}
+.advantage div p:first-child {
+    border-bottom: 3px solid #222222;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.advantage div p:last-child {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #555555;
+    margin-top: 0;
+}
+
+
 @media (max-width: 767px) {
     header {
         padding-left: 2rem;
@@ -428,6 +466,27 @@ header .icons a img:last-child{
     .discover p {
         width: auto;
     }
+    .advantage {
+        width: 100%;
+        gap: 2rem;
+        overflow-x: hidden;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        box-sizing: border-box;
+    }
+    .advantage div p:first-child {
+
+        margin-bottom: 1rem;
+        font-size: 40px;
+    }
+
+    .advantage div p:last-child {
+
+
+        font-size: 20px;
+
+    }
+
 
 
 }
@@ -479,6 +538,27 @@ header .icons a img:last-child{
         width: 100%;
         text-align: end;
         padding-right: 2rem;
+    }
+    .advantage {
+        width: 100%;
+        gap: 2rem;
+        justify-content: space-around;
+        overflow-x: hidden;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        box-sizing: border-box;
+    }
+    .advantage div p:first-child {
+
+        margin-bottom: 1rem;
+        font-size: 40px;
+    }
+
+    .advantage div p:last-child {
+
+
+        font-size: 20px;
+
     }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
