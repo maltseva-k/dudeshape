@@ -343,6 +343,52 @@ header .icons a img:last-child{
     margin-top: 0;
 }
 
+.blog {
+    width: 100%;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.blog_text {
+    padding-right: 2rem;
+
+}
+
+.blog_text h4 {
+    width: 70%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 70px;
+    /* or 125% */
+
+
+    color: #000000;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.blog_text p {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+
+
+    color: #555555;
+
+}
+
+.blog_text button {
+    margin-top: 2rem;
+}
+
 
 @media (max-width: 767px) {
     header {
@@ -486,6 +532,35 @@ header .icons a img:last-child{
         font-size: 20px;
 
     }
+    .blog {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 3rem;
+    }
+
+    .blog_image {
+        width: 100%;
+        order: 1;
+    }
+    .blog_text {
+        order: 2;
+        width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        box-sizing: border-box;
+    }
+
+    .blog_text h4 {
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
 
 
 
@@ -560,6 +635,38 @@ header .icons a img:last-child{
         font-size: 20px;
 
     }
+    .blog {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 3rem;
+    }
+    .blog div {
+        width: 100%;
+    }
+
+    .blog_image {
+        width: 100%;
+        order: 1;
+    }
+    .blog_text {
+        order: 2;
+        width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        box-sizing: border-box;
+    }
+
+    .blog_text h4 {
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
 }
 @media (min-width: 991px) and (max-width: 1199px) {
     header {
