@@ -446,7 +446,40 @@ header .icons a img:last-child{
         flex-direction: row;
         justify-content: space-between;
     }
-    .title_left
+    .card_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 1rem;
+        gap: 1rem;
+
+    }
+
+    .card_footer div:first-child {
+        display: flex;
+        justify-content: space-between;
+        gap:1rem;
+        align-items: stretch;
+        width: 100%;
+    }
+    .card_button {
+
+        width: 50%;
+        margin-right: 0;
+        align-self: stretch;
+
+
+
+
+    }
+
+
+    .price {
+        width: 100%;
+        text-align: end;
+        padding-right: 2rem;
+    }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
     header {
