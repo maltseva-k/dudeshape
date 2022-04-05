@@ -4,7 +4,8 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    background: red;
+    /*background: red;*/
+    font-family: 'Red Hat Display', sans-serif;
 }
 header {
     display: flex;
@@ -88,7 +89,7 @@ header .icons a img:last-child{
 }
 
 
-.title_text {
+.title_h1 {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -127,10 +128,11 @@ header .icons a img:last-child{
 
 }
 
-.title_button:hover {
+.title_button:hover,
+.card_button:hover {
 
-    background-color: #402F2C;
 
+    background-color: #555555;
     color: #FFFFFF;
 
 
@@ -143,6 +145,165 @@ header .icons a img:last-child{
 
 .title_right img {
     width: 100%;
+}
+.partners {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popular_product_cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 3rem;
+}
+.popular_product_cards card {
+    width: 45%;
+
+}
+
+.popular_product_img{
+    width: 100%;
+
+}
+
+.popular_product h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 0;
+
+}
+
+.popular_product_title p{
+    font-family: 'Red Hat Display',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #555555;
+
+
+}
+.popular_product_p{
+
+    width: 50%;
+
+}
+.popular_product_title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+.popular_product {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 4rem;
+    padding-left: 4rem;
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.discover {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.discover p {
+    align-items: center;
+    vertical-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+    font-weight: 500;
+    font-size: 24px;
+
+    text-decoration-line: underline;
+
+    color: #222222;
+}
+
+.discover img {
+    width: 1rem;
+}
+
+.card {
+   width: auto;
+    border: 1px solid rgba(104, 90, 82, 0.19);
+    box-sizing: border-box;
+
+}
+.card h3 {
+    padding-left: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: #222222;
+}
+
+.card p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    padding-left: 1rem;
+    text-align: start;
+    padding-right: 1rem;
+
+
+    color: #555555;
+}
+
+.card_footer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+.price {
+    align-items: center;
+    align-self: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 32px;
+    /* identical to box height, or 107% */
+
+    text-align: right;
+
+    color: #222222;
+}
+
+.card_button {
+    background-color: #402F2C;
+    padding: 16px 32px;
+    color: #FFFFFF;
+    border: none;
+    align-self: center;
+    margin-right: 1rem;
+
 }
 
 @media (max-width: 767px) {
@@ -172,15 +333,22 @@ header .icons a img:last-child{
         order: 2;
         width: 100%;
         text-align: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+
     }
 
-    .title_text {
-        padding-right: 2rem;
+    .title_h1 {
+        padding-right: 0;
+        padding-left: 0;
+
         padding-top: 1rem;
     }
 
     .title_search {
         width: 60%;
+        padding-right: 0;
+        padding-left: 0;
         margin-right: auto;
         text-align: center;
         margin-left: auto;
@@ -188,8 +356,84 @@ header .icons a img:last-child{
     .title_search input {
         width: 100%;
     }
+    .title_button {
+        padding: 14px 30px;
+        margin-right: auto;
+        text-align: center;
+
+        margin-left: auto;
+        margin-bottom: 2rem;
+    }
+
+    .popular_product {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .popular_product_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+
+    }
+
+    .card {
+        width: 100%;
+    }
+    .card_footer {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card h3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .popular_product h2 {
+        font-size: 38px;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .popular_product p{
+
+        font-size: 12px;
+        line-height: 20px;
+        color: #555555;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: start;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+    }
+
+    .popular_product_title {
+        width: 100%;
+        padding-top: 1rem;
+
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+    .discover {
+        width: 100%;
+        justify-content: start;
+        padding-bottom: 1rem;
+    }
+    .discover p {
+        width: auto;
+    }
+
 
 }
+
+
+
 
 @media (min-width: 768px) and (max-width: 991px) {
     header {
