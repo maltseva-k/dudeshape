@@ -225,7 +225,7 @@ header .icons a img:last-child{
 
 }
 
-.discover p {
+.discover a {
     align-items: center;
     vertical-align: center;
     margin-top: auto;
@@ -237,6 +237,10 @@ header .icons a img:last-child{
     text-decoration-line: underline;
 
     color: #222222;
+}
+
+.discover a:hover {
+    color: rgba(64, 47, 44, 1);
 }
 
 .discover img {
@@ -452,13 +456,22 @@ footer {
     width: 100%;
     background-color: #F9F6F5;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 6rem;
     padding-left: 4rem;
     padding-right: 4rem;
     box-sizing: border-box;
     padding-top: 4rem;
     padding-bottom: 3rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    padding-top: 1.5rem;
 
 }
 
@@ -485,10 +498,20 @@ footer .logo {
 
 }
 
-.about_us,
+
+
+.about_us {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    align-items: start;
+
+}
 .links,
 .contacts{
-    width: 25%;
+   width: auto;
+
     display: flex;
     flex-direction: column;
     align-self: start;
@@ -640,6 +663,7 @@ footer a {
     .card {
         width: 100%;
     }
+
     .card_footer {
 
         margin-bottom: 2rem;
@@ -691,8 +715,8 @@ footer a {
 
     .popular_product p{
 
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 32px;
         color: #555555;
         width: 100%;
         box-sizing: border-box;
@@ -717,8 +741,9 @@ footer a {
         justify-content: start;
         padding-bottom: 1rem;
     }
-    .discover p {
+    .discover a {
         width: auto;
+
     }
     .advantage {
         width: 100%;
@@ -811,7 +836,12 @@ footer a {
     }
 
     .subscribe div button {
-        width: 30%;
+        width: 40%;
+    }
+
+    .subscribe input {
+        padding-left: 0;
+        align-items: stretch;
     }
 
     footer {
@@ -847,7 +877,7 @@ footer a {
 
     .links,
     .contacts {
-        width: auto;
+        width: 50%;
     }
     .social {
         margin-right: 5px;
@@ -964,6 +994,29 @@ footer a {
         line-height: 50px;
     }
 
+    .subscribe {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 32px;
+        display: flex;
+        flex-direction: row;
+    }
+    .subscribe div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .subscribe div button {
+        width: 40%;
+    }
+
+    .subscribe input {
+        padding-left: 0;
+        align-items: stretch;
+    }
+
 }
 @media (min-width: 991px) and (max-width: 1199px) {
     header {
@@ -975,6 +1028,14 @@ footer a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .subscribe {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 32px;
+        display: flex;
+        flex-direction: row;
     }
 }
 
