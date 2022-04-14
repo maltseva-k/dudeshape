@@ -7,6 +7,10 @@ body {
     /*background: red;*/
     font-family: 'Red Hat Display', sans-serif;
 }
+button,
+input {
+    cursor: pointer;
+}
 header {
     display: flex;
     font-family: 'Red Hat Display', sans-serif;
@@ -424,7 +428,7 @@ header .icons a img:last-child{
 
 .prev_pagination {
     transform: scale(-1, 1);
-    margin-right: 1rem;
+    /*margin-right: 1rem;*/
 }
 
 .reviews_text {
@@ -450,6 +454,9 @@ blockquote {
 
 .pagination {
     margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 footer {
@@ -523,16 +530,25 @@ footer .logo {
     padding-left: 7rem;
     box-sizing: border-box;
 }
+.social {
+    display: flex;
 
+}
 .social a {
     width: 15px;
     height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 1.5rem;
     text-decoration: none;
 }
 
 .social a:hover {
     text-decoration: none;
+    background-color: rgba(64, 47, 44, 0.22);
 
 }
 
@@ -588,6 +604,30 @@ footer a {
     width: 20rem;
     padding-left: 1rem;
 }
+
+.pagination button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    background-color: transparent;
+    border: none;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+
+}
+.pagination button:hover {
+
+    background-color: aliceblue;
+
+
+}
+.pagination button img {
+    object-fit: cover;
+}
+
 
 @media (max-width: 767px) {
     header {
@@ -818,11 +858,13 @@ footer a {
     .pagination {
         width: 100%;
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .subscribe {
         width: 100%;
+        padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
         font-size: 32px;
@@ -1036,6 +1078,14 @@ footer a {
         font-size: 32px;
         display: flex;
         flex-direction: row;
+    }
+    .pagination {
+
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .reviews_text h5 {
+        margin-top: 0;
     }
 }
 
