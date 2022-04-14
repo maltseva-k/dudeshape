@@ -532,23 +532,25 @@ footer .logo {
 }
 .social {
     display: flex;
+    gap: 1rem;
 
 }
 .social a {
-    width: 15px;
-    height: 15px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1.5rem;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .social a:hover {
     text-decoration: none;
-    background-color: rgba(64, 47, 44, 0.22);
+    background-color: white;
+    border: 1px solid #402F2C;
 
 }
 
@@ -923,7 +925,14 @@ footer a {
     }
     .social {
         margin-right: 5px;
+        gap: 0.5rem;
     }
+
+    .social a {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
     h6 {
         margin-bottom: 1rem;
     }
@@ -1057,6 +1066,14 @@ footer a {
     .subscribe input {
         padding-left: 0;
         align-items: stretch;
+    }
+    .social {
+        gap: 0.5rem;
+    }
+
+    .social a {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
 }
